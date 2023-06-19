@@ -1,0 +1,1 @@
+{"uuid":"34c84801-8c44-4818-b074-e2120aacdad0","name":"Projects.AuToPayMent.GetBalanceUser","children":["e5108ee5-a8ea-45d6-9de3-12e76c2d6c79"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681793420224,"stop":1681793420224}],"afters":[],"links":[],"start":1681793420223,"stop":1681793420318}

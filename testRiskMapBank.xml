@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+    <test name="MapBank Case 1">
+        <parameter name="user" value="0975329909" />
+        <parameter name="amount" value="2000001" />
+        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />
+        <parameter name="equal" value="-1073" />
+        <classes>
+            <class name="Projects.Database.Mapbank.Delete"/>
+            <class name="Projects.Database.Mapbank.Insert"/>
+            <class name="Projects.Database.Fraud.Delete"/>
+            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>
+        </classes>
+    </test>
+<!--    <test name="MapBank Case 2">-->
+<!--        <parameter name="user" value="0975329900" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />-->
+<!--        <parameter name="equal" value="-1074" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 3">-->
+<!--        <parameter name="user" value="0975329900" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79999" />-->
+<!--        <parameter name="equal" value="-1073" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 4">-->
+<!--        <parameter name="user" value="0975329900" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79999" />-->
+<!--        <parameter name="equal" value="-1074" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MapBank Case 5">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />-->
+<!--        <parameter name="equal" value="-1073" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MapBank Case 6">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />-->
+<!--        <parameter name="equal" value="-1074" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 7">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 8">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 9">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />-->
+<!--        <parameter name="equal" value="-1073" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 10">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />-->
+<!--        <parameter name="equal" value="-1074" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 11">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.7d5cfff6-58c0-4bac-83c1-1ca7ccde41af" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 12">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.7d5cfff6-58c0-4bac-83c1-1ca7ccde41af" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 13">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.0bc6c87d-84c8-4275-9ae3-0e1aaf312437" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="MapBank Case 14">-->
+<!--        <parameter name="user" value="01639383882" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.0bc6c87d-84c8-4275-9ae3-0e1aaf312437" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>

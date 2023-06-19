@@ -1,0 +1,1 @@
+{"uuid":"69ec9656-47db-479e-ab22-d5e16f77d631","name":"Projects.P2P.SendMoneyP2P","children":["3145f47b-db87-49d2-b2d3-b6fde6e59414"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681888870146,"stop":1681888870146}],"afters":[],"links":[],"start":1681888870145,"stop":1681888870942}

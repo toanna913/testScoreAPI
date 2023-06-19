@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login AuThen NoCore]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.testng.reporters.EmailableReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test thread-count="5" name="Verify OTP success(failed)">
+    <parameter name="errorCode" value="0"/>
+    <parameter name="User-number" value="0975329906"/>
+    <classes>
+      <class name="Projects.AuToAuthen.VerifyOTP">
+        <methods>
+          <include name="VerifyOTP" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Projects.AuToAuthen.VerifyOTP -->
+    </classes>
+  </test> <!-- Verify OTP success(failed) -->
+  <test thread-count="5" name="Verify OTP fail(failed)">
+    <parameter name="errorCode" value="-17"/>
+    <parameter name="User-number" value="0975329906"/>
+    <classes>
+      <class name="Projects.AuToAuthen.VerifyOTP">
+        <methods>
+          <include name="VerifyOTP" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Projects.AuToAuthen.VerifyOTP -->
+    </classes>
+  </test> <!-- Verify OTP fail(failed) -->
+</suite> <!-- Failed suite [Login AuThen NoCore] -->

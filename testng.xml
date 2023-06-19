@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+
+
+<!--    <test name="Phone number exist">-->
+<!--        <parameter name="user-number" value="0975329909" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.CheckUser"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="MapBank Case 1">
+        <parameter name="user" value="0975329906" />
+        <parameter name="amount" value="2000001" />
+        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />
+        <parameter name="equal" value="-1073" />
+        <classes>
+            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>
+        </classes>
+    </test>
+<!--    <test name="Phone number is'nt exist">-->
+<!--        <parameter name="user-number" value="0975329904" />-->
+<!--        <parameter name="errorCode" value="-3" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.CheckUser"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Version App Not Matched">-->
+<!--        <parameter name="User-number" value="0975329906" />-->
+<!--        <parameter name="AppVer" value="40122" />-->
+<!--        <parameter name="errorCode" value="-90" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.SendOTP"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="SendOTP OK">-->
+<!--        <parameter name="User-number" value="0975329906" />-->
+<!--        <parameter name="AppVer" value="40123" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.SendOTP"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Verify OTP success">-->
+<!--        <parameter name="User-number" value="0975329906" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.VerifyOTP"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Connect Database">-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleDatabaseConnect"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Risk rule">-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevide"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Verify OTP fail">-->
+<!--        <parameter name="User-number" value="0975329906" />-->
+<!--        <parameter name="errorCode" value="-17" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.VerifyOTP"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Check AppVer IOS fail">-->
+<!--        <parameter name="pHash" value="Gh4NLAFzahzOSWuWPW2wSGQ6g3Q84RuRw0qh/zQp6J3wXS++1kLYArM9BcrxHiLSWvjBiul9chkxWFV3tKkXwF0g/a/ktxiD8os43ICkrMg=" />-->
+<!--        <parameter name="AppVer" value="40132" />-->
+<!--        <parameter name="deviceOS" value="ios" />-->
+<!--        <parameter name="errCode" value="-90" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.UserLogin"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Check AppVer Android fail">-->
+<!--        <parameter name="pHash" value="Gh4NLAFzahzOSWuWPW2wSGQ6g3Q84RuRw0qh/zQp6J3wXS++1kLYArM9BcrxHiLSWvjBiul9chkxWFV3tKkXwF0g/a/ktxiD8os43ICkrMg=" />-->
+<!--        <parameter name="AppVer" value="40133" />-->
+<!--        <parameter name="deviceOS" value="android" />-->
+<!--        <parameter name="errCode" value="-90" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToAuthen.UserLogin"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Get Balance User before login">-->
+<!--        <parameter name="User" value="0975329906" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <parameter name="turn" value="0" />-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMent.GetBalanceUser"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Old Flow Have Fee">-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMent.CreateBill"/>-->
+<!--            <class name="Projects.AuToPayMent.AddCart"/>-->
+<!--            <class name="Projects.AuToPayMent.CheckOut"/>-->
+<!--            <class name="Projects.AuToPayMent.Payment"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="New Flow Have Fee">-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMent.CreateBill"/>-->
+<!--            <class name="Projects.AuToPayMent.AddCart"/>-->
+<!--            <class name="Projects.AuToPayMent.NewCheckOut"/>-->
+<!--            &lt;!&ndash;            <class name="Projects.AuToPayMent.CheckOut"/>&ndash;&gt;-->
+<!--                        <class name="Projects.AuToPayMent.Payment"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Old Flow Not Fee">-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMentTelCo.AddCart"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.CheckOut"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.Payment"/>-->
+
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="New Flow Not Fee">-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMentTelCo.AddCart"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.NewCheckOut"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.Payment"/>-->
+
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Payment without core2">-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMentTelCo.AddCart"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.CheckOut"/>-->
+<!--            <class name="Projects.AuToPayMentTelCo.Payment"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Get Balance User after payment">-->
+<!--        <parameter name="User" value="0975329906" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <parameter name="turn" value="1" />-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMent.GetBalanceUser"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="P2P without core">-->
+<!--        <classes>-->
+<!--            <class name="Projects.P2P.SendMoneyP2P"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Get Balance User after p2p">-->
+<!--        <parameter name="User" value="0975329909" />-->
+<!--        <parameter name="errorCode" value="0" />-->
+<!--        <parameter name="turn" value="0" />-->
+
+<!--        <classes>-->
+<!--            <class name="Projects.AuToPayMent.GetBalanceUser"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>

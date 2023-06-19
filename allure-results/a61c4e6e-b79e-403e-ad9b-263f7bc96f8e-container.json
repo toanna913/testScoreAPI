@@ -1,0 +1,1 @@
+{"uuid":"a61c4e6e-b79e-403e-ad9b-263f7bc96f8e","name":"Projects.AuToPayMentTelCo.CheckOut","children":["cf95de71-517b-4f34-9f09-f3728011b5dd"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681810138187,"stop":1681810138187}],"afters":[],"links":[],"start":1681810137539,"stop":1681810160352}

@@ -1,0 +1,1 @@
+{"uuid":"7a77f374-f70e-4aa6-9f18-194e6b91a7ae","name":"Projects.AuToAuthen.CheckUser","children":["a8d2f6b5-4ae8-4254-b5c6-2f9def733c98"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681793555851,"stop":1681793556063}],"afters":[],"links":[],"start":1681793555835,"stop":1681793557514}

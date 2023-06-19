@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">MapBank Case 1</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">13.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">MapBank Case 2</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">MapBank Case 3</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">MapBank Case 4</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t5">MapBank Case 5</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t6">MapBank Case 6</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t7">MapBank Case 7</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t8">MapBank Case 8</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">5.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t9">MapBank Case 9</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t10">MapBank Case 10</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t11">MapBank Case 11</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t12">MapBank Case 12</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t13">MapBank Case 13</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t14">MapBank Case 14</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">6.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">40</td><td class="numi">40</td><td class="numi">0</td><td class="numi">0</td><td class="numi">83.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">MapBank Case 1 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m1"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975660101</td><td class="numi">1934</td></tr>
+<tr class="passedeven"><td>Projects.Database.Mapbank.Delete</td><td><a href="#m2"><b>DeleteMapBank</b>  </a></td><td class="numi">1</td><td>1686975649067</td><td class="numi">4920</td></tr>
+<tr class="passedodd"><td>Projects.Database.Mapbank.Insert</td><td><a href="#m3"><b>InsertMapBank</b>  </a></td><td class="numi">1</td><td>1686975653987</td><td class="numi">2853</td></tr>
+<tr class="passedeven"><td>Projects.Database.Fraud.Delete</td><td><a href="#m4"><b>DeleteFraudDetection</b>  </a></td><td class="numi">1</td><td>1686975656840</td><td class="numi">2934</td></tr>
+<tr id="t2"><th colspan="5">MapBank Case 2 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.Database.Fraud.Insert</td><td><a href="#m5"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975662035</td><td class="numi">5792</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m6"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975667827</td><td class="numi">257</td></tr>
+<tr class="passedodd"><td>Projects.Database.Fraud.Insert</td><td><a href="#m7"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975662035</td><td class="numi">5792</td></tr>
+<tr id="t3"><th colspan="5">MapBank Case 3 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.Database.Mapbank.Delete</td><td><a href="#m8"><b>DeleteMapBank</b>  </a></td><td class="numi">1</td><td>1686975668084</td><td class="numi">2918</td></tr>
+<tr class="passedeven"><td>Projects.Database.Mapbank.Insert</td><td><a href="#m9"><b>InsertMapBank</b>  </a></td><td class="numi">1</td><td>1686975671002</td><td class="numi">3082</td></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m10"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975676953</td><td class="numi">231</td></tr>
+<tr class="passedeven"><td>Projects.Database.Fraud.Delete</td><td><a href="#m11"><b>DeleteFraudDetection</b>  </a></td><td class="numi">1</td><td>1686975674084</td><td class="numi">2869</td></tr>
+<tr id="t4"><th colspan="5">MapBank Case 4 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Projects.Database.Fraud.Insert</td><td><a href="#m12"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975677184</td><td class="numi">5718</td></tr><tr class="passedodd"><td><a href="#m13"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975677184</td><td class="numi">5718</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m14"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975682902</td><td class="numi">299</td></tr>
+<tr id="t5"><th colspan="5">MapBank Case 5 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.Database.Mapbank.Insert</td><td><a href="#m15"><b>InsertMapBank</b>  </a></td><td class="numi">1</td><td>1686975686084</td><td class="numi">2880</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m16"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975692036</td><td class="numi">328</td></tr>
+<tr class="passedodd"><td>Projects.Database.Mapbank.Delete</td><td><a href="#m17"><b>DeleteMapBank</b>  </a></td><td class="numi">1</td><td>1686975683201</td><td class="numi">2882</td></tr>
+<tr class="passedeven"><td>Projects.Database.Fraud.Delete</td><td><a href="#m18"><b>DeleteFraudDetection</b>  </a></td><td class="numi">1</td><td>1686975688965</td><td class="numi">3071</td></tr>
+<tr id="t6"><th colspan="5">MapBank Case 6 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m19"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975698138</td><td class="numi">312</td></tr>
+<tr class="passedeven"><td rowspan="2">Projects.Database.Fraud.Insert</td><td><a href="#m20"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975692365</td><td class="numi">5773</td></tr><tr class="passedeven"><td><a href="#m21"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975692365</td><td class="numi">5773</td></tr>
+<tr id="t7"><th colspan="5">MapBank Case 7 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m22"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975698450</td><td class="numi">122</td></tr>
+<tr id="t8"><th colspan="5">MapBank Case 8 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Projects.Database.Fraud.Insert</td><td><a href="#m23"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975698572</td><td class="numi">5782</td></tr><tr class="passedodd"><td><a href="#m24"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975698572</td><td class="numi">5782</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m25"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975704354</td><td class="numi">116</td></tr>
+<tr id="t9"><th colspan="5">MapBank Case 9 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.Database.Mapbank.Insert</td><td><a href="#m26"><b>InsertMapBank</b>  </a></td><td class="numi">1</td><td>1686975707366</td><td class="numi">2911</td></tr>
+<tr class="passedeven"><td>Projects.Database.Mapbank.Delete</td><td><a href="#m27"><b>DeleteMapBank</b>  </a></td><td class="numi">1</td><td>1686975704470</td><td class="numi">2895</td></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m28"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975713146</td><td class="numi">431</td></tr>
+<tr class="passedeven"><td>Projects.Database.Fraud.Delete</td><td><a href="#m29"><b>DeleteFraudDetection</b>  </a></td><td class="numi">1</td><td>1686975710277</td><td class="numi">2869</td></tr>
+<tr id="t10"><th colspan="5">MapBank Case 10 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.Database.Fraud.Insert</td><td><a href="#m30"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975713577</td><td class="numi">5954</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m31"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975719531</td><td class="numi">267</td></tr>
+<tr class="passedodd"><td>Projects.Database.Fraud.Insert</td><td><a href="#m32"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975713577</td><td class="numi">5954</td></tr>
+<tr id="t11"><th colspan="5">MapBank Case 11 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m33"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975719798</td><td class="numi">100</td></tr>
+<tr id="t12"><th colspan="5">MapBank Case 12 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m34"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975725803</td><td class="numi">107</td></tr>
+<tr class="passedeven"><td rowspan="2">Projects.Database.Fraud.Insert</td><td><a href="#m35"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975719898</td><td class="numi">5905</td></tr><tr class="passedeven"><td><a href="#m36"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975719898</td><td class="numi">5905</td></tr>
+<tr id="t13"><th colspan="5">MapBank Case 13 &#8212; passed</th></tr>
+<tr class="passedodd"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m37"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975725910</td><td class="numi">147</td></tr>
+<tr id="t14"><th colspan="5">MapBank Case 14 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Projects.Database.Fraud.Insert</td><td><a href="#m38"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975726057</td><td class="numi">5924</td></tr><tr class="passedodd"><td><a href="#m39"><b>InsertFraudDetection</b>  </a></td><td class="numi">2</td><td>1686975726057</td><td class="numi">5924</td></tr>
+<tr class="passedeven"><td>Projects.AuToRiskRule.RiskRuleMapBank</td><td><a href="#m40"><b>CheckUserRisk</b>  </a></td><td class="numi">1</td><td>1686975731981</td><td class="numi">109</td></tr>
+</table>
+<h1>MapBank Case 1</h1>
+<h2 id="m1">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>2000001</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1073</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Projects.Database.Mapbank.Delete:DeleteMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Projects.Database.Mapbank.Insert:InsertMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Projects.Database.Fraud.Delete:DeleteFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 2</h1>
+<h2 id="m5">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>2000000</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1074</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 3</h1>
+<h2 id="m8">Projects.Database.Mapbank.Delete:DeleteMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">Projects.Database.Mapbank.Insert:InsertMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79999</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>2000001</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79999</td>
+<td>-1073</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">Projects.Database.Fraud.Delete:DeleteFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 4</h1>
+<h2 id="m12">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329900</td>
+<td>2000000</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79999</td>
+<td>-1074</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 5</h1>
+<h2 id="m15">Projects.Database.Mapbank.Insert:InsertMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+<td>2000001</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1073</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">Projects.Database.Mapbank.Delete:DeleteMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">Projects.Database.Fraud.Delete:DeleteFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 6</h1>
+<h2 id="m19">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+<td>2000000</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1074</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 7</h1>
+<h2 id="m22">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+<td>2000001</td>
+<td>SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 8</h1>
+<h2 id="m23">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>0975329906</td>
+<td>2000001</td>
+<td>SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 9</h1>
+<h2 id="m26">Projects.Database.Mapbank.Insert:InsertMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">Projects.Database.Mapbank.Delete:DeleteMapBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000001</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1073</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">Projects.Database.Fraud.Delete:DeleteFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 10</h1>
+<h2 id="m30">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000000</td>
+<td>SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816</td>
+<td>-1074</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 11</h1>
+<h2 id="m33">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000001</td>
+<td>SOF-2.7d5cfff6-58c0-4bac-83c1-1ca7ccde41af</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 12</h1>
+<h2 id="m34">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000000</td>
+<td>SOF-2.7d5cfff6-58c0-4bac-83c1-1ca7ccde41af</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 13</h1>
+<h2 id="m37">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000001</td>
+<td>SOF-2.0bc6c87d-84c8-4275-9ae3-0e1aaf312437</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>MapBank Case 14</h1>
+<h2 id="m38">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">Projects.Database.Fraud.Insert:InsertFraudDetection</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">Projects.AuToRiskRule.RiskRuleMapBank:CheckUserRisk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>01639383882</td>
+<td>2000000</td>
+<td>SOF-2.0bc6c87d-84c8-4275-9ae3-0e1aaf312437</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
