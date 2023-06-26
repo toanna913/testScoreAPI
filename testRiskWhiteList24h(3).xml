@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+    <test name="MapBank Case 1">
+        <parameter name="user" value="0975329900" />
+        <parameter name="amount" value="2000001" />
+        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79816" />
+        <parameter name="equal" value="-1073" />
+        <classes>
+            <class name="Projects.Database.Mapbank.Delete"/>
+            <class name="Projects.Database.Mapbank.Insert"/>
+            <class name="Projects.Database.Fraud.Delete"/>
+            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>
+        </classes>
+    </test>
+    
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>
