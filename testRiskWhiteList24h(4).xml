@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testcase Risk Rule WhiteList 24h">
+
+<!--    <test name="Case 1">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 2">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevide"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 3">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 4">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79887" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 5">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79887" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 6">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79887" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 7">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="amount" value="3000000" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 8">-->
+<!--        <parameter name="user" value="0975329909" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--&lt;!&ndash;       User đã FM < 24h Change Devide &ndash;&gt;-->
+<!--    <test name="Case 9">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 10">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 11">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 12">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 13">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 14">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 15">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    &lt;!&ndash;   User đã FM < 24h Mapbank &ndash;&gt;-->
+<!--    <test name="Case 16">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b78888" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 17">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79998" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 18">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b11111" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 19">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b11111" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 20">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 21">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 22">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--&lt;!&ndash;     User đã FM < 24h ResetPin &ndash;&gt;-->
+<!--    <test name="Case 23">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="5000000" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 24">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="kyc" value="1" />-->
+<!--        <parameter name="face_matching" value="1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleFaceMatching"/>-->
+<!--            <class name="Projects.Database.Whitelist24.Update"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 25">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000000" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 26">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <classes>-->
+
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 27">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.Database.ResetPin.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 28">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79909" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 29">-->
+<!--        <parameter name="user" value="0975329906" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79909" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--       User  chưa KYC, chưa FM -->
+
+<!--    <test name="Case 30">-->
+<!--        <parameter name="user" value="0867511921" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 31">-->
+<!--        <parameter name="user" value="0867511921" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 32">-->
+<!--        <parameter name="user" value="0867511921" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 33">-->
+<!--        <parameter name="user" value="0867511921" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 34">-->
+<!--        <parameter name="user" value="0867511921" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="FULL" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--       User  đã KYC, chưa FM -->
+
+<!--    <test name="Case 35">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="-100700" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="Face_only" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ResetPin.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ChangeDevide.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 36">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="-100701" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="Face_only" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevideNewErrror"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 37">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100702" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="Face_only" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Insert"/>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 38">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="-100703" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="Face_only" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBankNewError"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 39">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="-100704" />-->
+<!--        <parameter name="purpose" value="EKYC_IDENTIFY" />-->
+<!--        <parameter name="option" value="Face_only" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPinErrorCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!--   User chưa thực hiện change devid, reset pin, mapbank-->
+
+<!--    <test name="Case 61">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.ChangeDevide.Delete"/>-->
+<!--            <class name="Projects.Database.Mapbank.Delete"/>-->
+<!--            <class name="Projects.Database.ResetPin.Delete"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevide"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 57">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleChangeDevide"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 62">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="amount" value="2000001" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 63">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="1" />-->
+<!--        <parameter name="amount" value="2000000" />-->
+<!--        <parameter name="sourceToken" value="SOF-2.fdb1fa28-708f-4740-bdb9-7c4f65b79902" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.Database.Fraud.Delete"/>-->
+<!--            <class name="Projects.Database.Fraud.Insert"/>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleMapBank"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Case 64">-->
+<!--        <parameter name="user" value="0975329905" />-->
+<!--        <parameter name="io" value="-1" />-->
+<!--        <parameter name="amount" value="5000001" />-->
+<!--        <parameter name="equal" value="0" />-->
+<!--        <classes>-->
+<!--            <class name="Projects.AuToRiskRule.RiskRuleResetPin"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>

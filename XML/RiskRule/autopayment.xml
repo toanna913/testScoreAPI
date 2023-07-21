@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+
+    <test name="Case 1">
+        <parameter name="user" value="0975329908" />
+        <parameter name="equal" value="-100700" />
+        <parameter name="amount" value="2000001" />
+        <classes>
+            <class name="Projects.Database.ResetPin.Delete"/>
+            <class name="Projects.Database.ChangeDevide.Insert"/>
+            <class name="Projects.AuToPayMent.CreateBill"/>
+            <class name="Projects.AuToPayMent.AddCart"/>
+            <class name="Projects.AuToPayMent.CheckOut"/>
+            <class name="Projects.AuToPayMent.Payment"/>
+        </classes>
+    </test>
+    <test name="Case 2">
+        <parameter name="user" value="0975329908" />
+        <parameter name="equal" value="0" />
+        <parameter name="amount" value="20000" />
+        <classes>
+            <class name="Projects.AuToPayMent.CreateBill"/>
+            <class name="Projects.AuToPayMent.AddCart"/>
+            <class name="Projects.AuToPayMent.CheckOut"/>
+            <class name="Projects.AuToPayMent.Payment"/>
+        </classes>
+    </test>
+    <test name="Case 4">
+        <parameter name="user" value="0975329908" />
+        <parameter name="equal" value="-100701" />
+        <parameter name="io" value="-1" />
+        <parameter name="amount" value="2000000" />
+        <classes>
+            <class name="Projects.Database.Fraud.Insert"/>
+            <class name="Projects.AuToPayMent.CreateBill"/>
+            <class name="Projects.AuToPayMent.AddCart"/>
+            <class name="Projects.AuToPayMent.CheckOut"/>
+            <class name="Projects.AuToPayMent.Payment"/>
+        </classes>
+    </test>
+    <test name="Case 5">
+        <parameter name="user" value="0975329908" />
+        <parameter name="equal" value="-100704" />
+        <parameter name="io" value="-1" />
+        <parameter name="amount" value="5000000" />
+        <classes>
+            <class name="Projects.Database.Fraud.Delete"/>
+            <class name="Projects.Database.ChangeDevide.Delete"/>
+            <class name="Projects.Database.ResetPin.Insert"/>
+            <class name="Projects.AuToPayMent.CreateBill"/>
+            <class name="Projects.AuToPayMent.AddCart"/>
+            <class name="Projects.AuToPayMent.CheckOut"/>
+            <class name="Projects.AuToPayMent.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 7">
+        <parameter name="user" value="0975329908" />
+        <parameter name="equal" value="0" />
+        <parameter name="amount" value="6000000" />
+        <classes>
+            <class name="Projects.Database.ResetPin.Delete"/>
+            <class name="Projects.AuToPayMent.CreateBill"/>
+            <class name="Projects.AuToPayMent.AddCart"/>
+            <class name="Projects.AuToPayMent.CheckOut"/>
+            <class name="Projects.AuToPayMent.Payment"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>

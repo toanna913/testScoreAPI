@@ -27,13 +27,14 @@ public class PaymentObj {
         momoMsg.put("_class", "mservice.backend.entity.msg.OrderCartMsg");
 
         Rbody.put("momoMsg",momoMsg);
-        Rbody.put("user","0975329905");
+        Rbody.put("user","0975329908");
         Rbody.put("pass","000000");
         Rbody.put("cmdId","1675416552344000000");
         Rbody.put("msgType","PAYMENT");
         Rbody.put("result",true);
         Rbody.put("appCode","4.0.18");
-        Rbody.put("appVer",40180);
+        Rbody.put("buildNumber",2777);
+        Rbody.put("appVer",40181);
         Rbody.put("channel","APP");
         Rbody.put("deviceOS","ios");
         Rbody.put("resultType","SUCCESS");

@@ -10,10 +10,10 @@ public class CheckOutObj {
         String requestbody = "{\n" +
                 "  \"appCode\": \"4.0.18\",\n" +
                 "  \"appId\": \"\",\n" +
-                "  \"appVer\": 40130,\n" +
-                "  \"buildNumber\": 0,\n" +
+                "  \"appVer\": 40181,\n" +
+                "  \"buildNumber\": 2777,\n" +
                 "  \"channel\": \"APP\",\n" +
-                "  \"cmdId\": \"1675416552344000000\",\n" +
+                "  \"cmdId\": \"1675416552344000888\",\n" +
                 "  \"time\": \""+ (timestamp.getTime())+"\",\n" +
                 "  \"deviceOS\": \"ios\",\n" +
                 "  \"errorCode\": 0,\n" +
@@ -22,7 +22,7 @@ public class CheckOutObj {
                 "    \"checkSum\": \"UG2PEIqRERrp1A+xSAc0nkzv0Mv2nEknBZM8OXLz3PGoaLx/F3I1TtIHr7p7sasrfNz17xAUJzZgOMsy7phlWQ==\"\n" +
                 "  },\n" +
                 "  \"lang\": \"vi\",\n" +
-                "  \"user\": \"0975329905\",\n" +
+                "  \"user\": \"0975329908\",\n" +
                 "  \"msgType\": \"CHECKOUT\",\n" +
                 "  \"momoMsg\": {\n" +
                 "    \"miniAppId\": \"vn.momo.paymentoffline\",\n" +
@@ -32,23 +32,46 @@ public class CheckOutObj {
                 "    \"paymentType\": \"P_PLATFORM\",\n" +
                 "    \"cartInfo\": [\n" +
                 "      {\n" +
+                "                \"serviceType\": \"BILL_PAY\",\n" +
+                "                \"serviceId\": \"ninhhoa_water\",\n" +
+                "                \"serviceCode\": \"billpaycommon\",\n" +
+                "                \"serviceName\": \"Nước Ninh Hòa\",\n" +
                 "        \"itemId\": \""+ itemId+"\",\n" +
-                "        \"billId\": \""+ billId+"\",\n" +
-                "                \"status\": 0\n" +
-                "               // \"discountCode\": \"cashback\"\n" +
+                "        \"itemCode\": \""+ billId+"\",\n" +
+                "                \"description\": \"Nước Ninh Hòa\",\n" +
+                "                \"originalPrice\": 20000,\n" +
+                "                \"price\": 20000,\n" +
+                "                \"quantity\": 1,\n" +
+                "                \"fee\": 0,\n" +
+                "                \"visibleFee\": true,\n" +
+                "                \"feeFromCore\": true,\n" +
+                "                \"agentFee\": \"vttiinternal_test\",\n" +
+                "                \"originalAmount\": 10000,\n" +
+                "                \"amount\": 10000,\n" +
+                "                \"paymentStatus\": 0,\n" +
+                "                \"orderState\": 0,\n" +
+                "                \"status\": 0,\n" +
+                "                \"tranData\": \"\",\n" +
+                "                \"redeemStatus\": {\n" +
+                "                    \"voucherError\": 0,\n" +
+                "                    \"voucherDesc\": \"\",\n" +
+                "                    \"discountError\": 0,\n" +
+                "                    \"discountDesc\": \"\",\n" +
+                "                    \"prepaidError\": 0,\n" +
+                "                    \"prepaidDesc\": \"\",\n" +
+                "                    \"discountFeeError\": 0,\n" +
+                "                    \"discountFeeDesc\": \"\",\n" +
+                "                    \"groupSaleError\": 0,\n" +
+                "                    \"groupSaleDesc\": \"\"\n" +
+                "                }\n" +
                 "            }\n" +
                 "    ],\n" +
                 "    \"sourceInit\": {\n" +
                 "      \"moneySource\": 1,\n" +
                 "      \"moneySourceInfo\": {\n" +
                 "        \"partnerCode\": \"momo\",\n" +
-                "        \"rowCardId\": \"\",\n" +
-                "        \"cardNumber\": \"\",\n" +
-                "        \"cardType\": \"\",\n" +
-                "        \"cardSchema\": \"\",\n" +
                 "        \"bankName\": \"Ví MoMo\",\n" +
-                "        \"sourceToken\": \"SOF-1\",\n" +
-                "        \"bankCustomerId\": \"\"\n" +
+                "        \"sourceToken\": \"SOF-1\"\n" +
                 "      }\n" +
                 "    },\n" +
                 "    \"cartState\": \"CHECKOUT\",\n" +
@@ -67,7 +90,7 @@ public class CheckOutObj {
                 "  \"appCode\": \"4.0.18\",\n" +
                 "  \"appId\": \"vn.momo.payment\",\n" +
                 "  \"appVer\": 40181,\n" +
-                "  \"buildNumber\": 1562,\n" +
+                "  \"buildNumber\": 2777,\n" +
                 "  \"channel\": \"APP\",\n" +
                 "  \"cmdId\": \"1682046672728000000\",\n" +
                 "  \"time\": \""+ (timestamp.getTime())+"\",\n" +
@@ -75,7 +98,7 @@ public class CheckOutObj {
                 "  \"errorCode\": 0,\n" +
                 "  \"errorDesc\": \"\",\n" +
                 "  \"lang\": \"vi\",\n" +
-                "  \"user\": \"0975329905\",\n" +
+                "  \"user\": \"0975329906\",\n" +
                 "  \"msgType\": \"CHECKOUT\",\n" +
                 "  \"extra\": {\n" +
                 "    \"isShop\": false\n" +
