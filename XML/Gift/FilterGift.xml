@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+
+    <test name="Case 1">
+        <parameter name="user-number" value="0975329903" />
+        <parameter name="errorCode" value="0" />
+        <classes>
+            <class name="Projects.ResetPin.ResetPinTermplate"/>
+        </classes>
+    </test>
+    <test name="Case 2">
+        <parameter name="user-number" value="0975329905" />
+        <parameter name="errorCode" value="0" />
+        <classes>
+            <class name="Projects.ResetPin.ResetPinTermplate"/>
+        </classes>
+    </test>
+    <test name="Case 3">
+        <parameter name="user-number" value="0975329906" />
+        <parameter name="errorCode" value="0" />
+        <classes>
+            <class name="Projects.ResetPin.ResetPinTermplate"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>

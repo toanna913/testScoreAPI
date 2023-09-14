@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Score">
+    <test name="Case 9">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="1" />
+        <parameter name="partnerCode" value="momo" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Ví MoMo" />
+        <parameter name="sourceToken" value="SOF-1" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 10">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="9" />
+        <parameter name="partnerCode" value="investment" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Túi Thần Tài" />
+        <parameter name="sourceToken" value="SOF-9" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 11">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="10" />
+        <parameter name="partnerCode" value="payLater" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Ví Trả Sau" />
+        <parameter name="sourceToken" value="SOF-10" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 12">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="2" />
+        <parameter name="partnerCode" value="12345" />
+        <parameter name="cardType" value="CARD" />
+        <parameter name="bankName" value="Vietcombank" />
+        <parameter name="sourceToken" value="SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31" />
+        <parameter name="bankCustomerId" value="bde2169b-6d6b-46c5-a140-8373269f0a31" />
+        <parameter name="voucher" value="" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 13">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="1" />
+        <parameter name="partnerCode" value="momo" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Ví MoMo" />
+        <parameter name="sourceToken" value="SOF-1" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="TESTALL" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 14">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="9" />
+        <parameter name="partnerCode" value="investment" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Túi Thần Tài" />
+        <parameter name="sourceToken" value="SOF-9" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="TESTALL" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 15">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="10" />
+        <parameter name="partnerCode" value="payLater" />
+        <parameter name="cardType" value="" />
+        <parameter name="bankName" value="Ví Trả Sau" />
+        <parameter name="sourceToken" value="SOF-10" />
+        <parameter name="bankCustomerId" value="" />
+        <parameter name="voucher" value="TESTALL" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+    <test name="Case 16">
+        <parameter name="amount" value="20000" />
+        <parameter name="equal" value="0" />
+        <parameter name="moneySource" value="2" />
+        <parameter name="partnerCode" value="12345" />
+        <parameter name="cardType" value="CARD" />
+        <parameter name="bankName" value="Vietcombank" />
+        <parameter name="sourceToken" value="SOF-2.bde2169b-6d6b-46c5-a140-8373269f0a31" />
+        <parameter name="bankCustomerId" value="bde2169b-6d6b-46c5-a140-8373269f0a31" />
+        <parameter name="voucher" value="TESTALL" />
+        <classes>
+            <class name="Projects.MultiBill.CreateBillElectric"/>
+            <class name="Projects.MultiBill.CreateBillInsurance"/>
+            <class name="Projects.MultiBill.AddCartElectric"/>
+            <class name="Projects.MultiBill.AddCartInsuranceNoParent"/>
+            <class name="Projects.MultiBill.CheckOut"/>
+            <class name="Projects.MultiBill.Payment"/>
+        </classes>
+    </test>
+
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+</suite>
